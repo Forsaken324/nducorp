@@ -19,13 +19,8 @@ const Intro = () => {
     ref.current?.showPicker();
   }
 
-
-  const handleSearchHotel = () => {
-
-  }
-
   return (
-    <motion.div className="flex items-center md:pl-[30px] lg:pl-[100px] h-[1050px] w-[100%] bg-[url('/heroImage.png')] bg-no-repeat bg-cover">
+    <motion.div className="flex items-center md:pl-[30px] lg:pl-[100px] h-[1050px]  bg-[url('/heroImage.png')] bg-no-repeat bg-cover">
       <div className="px-5">
         <div className="flex items-center px-3 bg-blue-400/30 w-fit h-[32px] text-white rounded rounded-full">
           The Ultimate Hotel Experience
@@ -37,7 +32,7 @@ const Intro = () => {
           Unparalleled luxury and comfort await at the world's most executive
           botels and resorts. Start your journey today.
         </p>
-        <div className="md:w-[824px] md:h-[65px] bg-white text-black rounded rounded-base text-gray-400">
+        <div className="lg:w-[824px] md:h-[65px] py-3 md:py-0 bg-white text-black rounded rounded-base text-gray-400">
           <form method="post" className="grid grid-cols-2 md:grid-cols-4 gap-2 items-center justify-evenly py-2 px-4">
             <div>
               <label htmlFor="destination" className="flex gap-1"><img src={assets.locationIcon} alt="location icon" /><span> Destination</span></label>
@@ -64,7 +59,7 @@ const Intro = () => {
                 <label htmlFor="guests">Guests</label><br />
                 <input type="number" id="guests" required className="w-[43px] text-black rounded outline-yellow-500/50" value={guests as number} onChange={(e) => setGuests(Number(e.target.value) < 0 ? 0 : Number(e.target.value))}/>
               </div>
-              <button className="flex items-center justify-center gap-3 w-[114px] h-[38px] rounded rounded-base bg-primary text-white"><SearchIcon height={15} />Search</button>
+              <button className="flex items-center justify-center lg:gap-3 w-[114px] h-[38px] rounded rounded-base bg-primary text-white"><SearchIcon height={15} />Search</button>
             </div>
           </form>
         </div>
