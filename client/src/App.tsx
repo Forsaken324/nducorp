@@ -5,7 +5,7 @@ import Home from './page/Home'
 function App() {
   return (
     <>
-      <NavBar/>
+      {/* <NavBar/> */}
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>

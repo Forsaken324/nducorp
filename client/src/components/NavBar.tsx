@@ -6,11 +6,11 @@ import { MenuIcon, XIcon } from "lucide-react";
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
   return (
-    <nav className="fixed w-full absolute z-100 flex justify-between px-25 text-white items-center py-4">
+    <nav className="fixed w-full absolute z-100 flex justify-between md:px-5 lg:px-25 text-white items-center py-4">
+        <MenuIcon className={`md:hidden ${menuOpen ? 'hidden' : 'block'}`} onClick={() => setMenuOpen(true)} />
         <NavLink to={'/'}><img src={assets.logo} alt="logo" /></NavLink>
-        <MenuIcon className="md:hidden" />
-        <div className="flex gap-5">
-            <XIcon className="md:hidden" />
+        <div className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium max-md:text-lg z-50 flex gap-5`}>
+            <XIcon className={`md:hidden ${menuOpen ? 'hidden' : 'block'}`} onClick={() => setMenuOpen(false)} />
             <NavLink to={'/'}>Home</NavLink>
             <NavLink to={'/hotels'}>Hotels</NavLink>
             <NavLink to={'/experiences'}>Experiences</NavLink>
