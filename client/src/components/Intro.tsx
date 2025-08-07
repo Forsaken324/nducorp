@@ -25,6 +25,7 @@ const Intro = () => {
         <div className="flex items-center px-3 bg-blue-400/30 w-fit h-[32px] text-white rounded rounded-full">
           The Ultimate Hotel Experience
         </div> 
+
         <h1 className="text-white text-[40px] md:text-[60px] md:w-[598px] font-bold play-fair">
           Discover Your Perfect Getaway Destination
         </h1>
