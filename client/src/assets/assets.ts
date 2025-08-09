@@ -3,17 +3,17 @@ import searchIcon from './searchIcon.svg'
 import userIcon from './userIcon.svg'
 import calenderIcon from './calenderIcon.svg'
 import locationIcon from './locationIcon.svg'
-export {ReactComponent as StarIconFilled} from './starIconFilled.svg'
-import {ReactComponent as ArrowIcon} from './arrowIcon.svg'
-import {ReactComponent as StarIconOutlined} from './starIconOutlined.svg'
-import {ReactComponent as InstagramIcon} from './instagramIcon.svg'
-import {ReactComponent as FacebookIcon} from './facebookIcon.svg'
-import {ReactComponent as TwitterIcon} from './twitterIcon.svg'
-import {ReactComponent as LinkedInIcon} from './linkendinIcon.svg'
-import {ReactComponent as FreeWifiIcon} from './freeWifiIcon.svg'
-import {ReactComponent as FreeBreakFastIcon} from './freeBreakfastIcon.svg'
-import {ReactComponent as RoomServiceIcon} from './roomServiceIcon.svg'
-import {ReactComponent as MountainIcon} from './mountainIcon.svg'
+import starIconFIlled from './starIconFilled.svg'
+import arrowIcon from './arrowIcon.svg'
+import starIconOutlined from './starIconOutlined.svg'
+import instagramIcon from './instagramIcon.svg'
+import facebookIcon from './facebookIcon.svg'
+import twitterIcon from './twitterIcon.svg'
+import linkedinIcon from './linkendinIcon.svg'
+import freeWifiIcon from './freeWifiIcon.svg'
+import freeBreakfastIcon from './freeBreakfastIcon.svg'
+import roomServiceIcon from './roomServiceIcon.svg'
+import mountainIcon from './mountainIcon.svg'
 import poolIcon from './poolIcon.svg'
 import homeIcon from './homeIcon.svg'
 import closeIcon from './closeIcon.svg'
@@ -49,16 +49,17 @@ export const assets = {
     userIcon,
     calenderIcon,
     locationIcon,
-    ArrowIcon,
-    StarIconOutlined,
-    InstagramIcon,
-    FacebookIcon,
-    TwitterIcon,
-    LinkedInIcon,
-    FreeWifiIcon,
-    FreeBreakFastIcon,
-    RoomServiceIcon,
-    MountainIcon,
+    arrowIcon,
+    starIconFIlled,
+    starIconOutlined,
+    instagramIcon,
+    facebookIcon,
+    twitterIcon,
+    linkedinIcon,
+    freeWifiIcon,
+    freeBreakfastIcon,
+    roomServiceIcon,
+    mountainIcon,
     poolIcon,
     closeIcon,
     homeIcon,
@@ -103,10 +104,10 @@ export const testimonials = [
 
 // Facility Icon
 export const facilityIcons = {
-    "Free WiFi": FreeWifiIcon,
-    "Free Breakfast": FreeBreakFastIcon,
-    "Room Service": RoomServiceIcon,
-    "Mountain View": MountainIcon,
+    "Free WiFi": assets.freeWifiIcon,
+    "Free Breakfast": assets.freeBreakfastIcon,
+    "Room Service": assets.roomServiceIcon,
+    "Mountain View": assets.mountainIcon,
     "Pool Access": assets.poolIcon,
 }
 
