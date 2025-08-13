@@ -14,7 +14,7 @@ const HotelCard = ({ hotel }: HotelRoomProp) => {
   }, []);
 
   return (
-    <div className="w-[275px] rounded rounded-lg shadow-xl/30" onClick={() => navigate(`/hotels/${hotel.hotel._id}/${hotel._id}`)}>
+    <div className="w-[275px] rounded rounded-lg shadow-xl/30 py-2" onClick={() => navigate(`/hotels/${hotel.hotel._id}/${hotel._id}`)}>
       <div
         className="h-[183.48px] w-[275px] rounded rounded-t-lg bg-center bg-cover"
         ref={hotelImageRef}
