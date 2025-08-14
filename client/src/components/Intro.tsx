@@ -16,12 +16,12 @@ const Intro = () => {
   const [checkIn, setCheckIn] = useState<Date>(date);
   const [checkOut, setCheckOut] = useState<Date>(date);
 
-  const checkInRef = useRef<ReactDatePickerCustomHeaderProps | null>(null);
-  const checkOutRef = useRef<ReactDatePickerCustomHeaderProps | null>(null);
+  // const checkInRef = useRef<ReactDatePickerCustomHeaderProps | null>(null);
+  // const checkOutRef = useRef<ReactDatePickerCustomHeaderProps | null>(null);
 
-  const openPicker = (ref: RefObject<HTMLInputElement | null>) => {
-    ref.current?.showPicker();
-  }
+  // const openPicker = (ref: RefObject<HTMLInputElement | null>) => {
+  //   ref.current?.showPicker();
+  // }
 
   const handleSetCheckout = (date: Date | null) => {
     if (date) {
@@ -63,15 +63,15 @@ const Intro = () => {
             </div>
             <div>
               <label htmlFor="checkin" className="flex gap-1"><img src={assets.calenderIcon} alt="calendar" /><span> Check in</span></label>
-              <DatePicker selected={date} onChange={(date) => handleSetCheckin(date)}/>
-              <p className="text-black cursor-pointer">{formatDate(checkIn.toDateString())}</p>
+              <DatePicker selected={checkIn} onChange={handleSetCheckin} dateFormat={"MMMM d, yyyy"} className="text-black w-[150px]"/>
+              {/* <p className="text-black cursor-pointer">{formatDate(checkIn.toDateString())}</p> */}
             </div>
             <div>
               <label htmlFor="checkout" className="flex gap-1"><img src={assets.calenderIcon} alt="calendar icon" /><span> Check out</span></label>
-              <DatePicker ref={checkOutRef} selected={date} onChange={handleSetCheckout} className="hidden" />
-              <p className="text-black cursor-pointer" onClick={() => checkOutRef.current.setFocus()}>{formatDate(checkOut.toDateString())}</p>
+              <DatePicker selected={checkOut} onChange={handleSetCheckout} dateFormat={"MMMM d, yyyy"} className="text-black w-[150px]" />
+              {/* <p className="text-black cursor-pointer" onClick={() => checkOutRef.current.setFocus()}>{formatDate(checkOut.toDateString())}</p> */}
             </div>
-            <div className="flex flex-wrap gap-7">
+            <div className="flex flex-col md:flex-row gap-7">
               <div>
                 <label htmlFor="guests">Guests</label><br />
                 <input type="number" id="guests" required className="w-[43px] text-black rounded outline-yellow-500/50" value={guests as number} onChange={(e) => setGuests(Number(e.target.value) < 0 ? 0 : Number(e.target.value))}/>

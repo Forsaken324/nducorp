@@ -18,7 +18,7 @@ const FeaturedHotels = () => {
       <h2 className="text-black text-[40px] font-bold play-fair mt-[90px]">
         Featured Hotels
       </h2>
-      <p className="text-gray-400 text-sm px-5 md:px-0">
+      <p className="text-gray-400 text-sm px-5 md:px-10">
         Discover our handpicked selection of exceptional properties around the
         world, offering unparalled luxury and unforgettable experiences
       </p>

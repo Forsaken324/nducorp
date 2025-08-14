@@ -75,3 +75,16 @@ export interface UserBooking {
     updatedAt: string;
     __v: number;
 }
+
+export interface ExclusiveOfferI {
+    _id: number;
+    title: string;
+    description: string;
+    priceOff: number;
+    expiryDate: string; 
+    image: string;
+}
+
+export interface ExclusiveOfferProp {
+    offer: ExclusiveOfferI
+}

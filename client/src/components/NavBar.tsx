@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, } from "react-router-dom"
 import { assets } from "../assets/assets";
 import { MenuIcon, XIcon } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const [mobile, setMobile] = useState<boolean>(false);
     const [scrolled, setScrolled] = useState<boolean>(false);
+
 
     const handleWindow = () => {
       setMobile(window.innerWidth <= 768);

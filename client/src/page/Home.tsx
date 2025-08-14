@@ -1,4 +1,5 @@
 import Intro from "../components/Intro"
+import ExclusiveOffer from "./ExclusiveOffer"
 import FeaturedHotels from "./FeaturedHotels"
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
         <Intro />
         <FeaturedHotels />
+        <ExclusiveOffer />
     </div>
   )
 }
